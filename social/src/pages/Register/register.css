@@ -1,0 +1,113 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerWrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.registerLeft,
+.registerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registerlogo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775ee;
+}
+
+/* .registerDesc {
+    font-size: 24px;
+} */
+.registerdesc {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap; 
+    position: relative; /* Added to set the position context for absolute positioning of caret */
+    animation: typewriter 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter animation */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    80% {
+        border-right: .15em solid orange;
+         }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: red; /* Change the color of the cursor */
+    }
+}
+
+
+.registerBox {
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registerInput {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.registerInput:focus {
+    outline: none;
+}
+
+.registerButton {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.registerForgot {
+    text-align: center;
+    color: #1775ee;
+}
+
+.RegisterButton {
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    align-self: center;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
