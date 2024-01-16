@@ -1,0 +1,25 @@
+.top {
+  height: 50px;
+  z-index: 100;
+  width: 100%;
+  background-color: #1f2432;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  font-family: 'Josefin Sans', 'sans-serief';
+}
+
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.topIcon{
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
